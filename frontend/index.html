@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hi" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KisanSetu - Multi-Channel Agri-Procurement Platform</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            earth: {
+              50: '#fefce8',
+              100: '#fef9c3',
+              500: '#eab308',
+              700: '#a16207',
+              900: '#713f12',
+            },
+            agrigreen: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="h-full bg-slate-100 text-slate-900 antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- Root SPA Container -->
+  <div id="app-root"></div>
+
+  <!-- Core Scripts in Dependency Order -->
+  <script src="js/i18n.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/cv-engine.js"></script>
+  <script src="js/voice.js"></script>
+  
+  <!-- UI Components -->
+  <script src="js/components/farmerApp.js"></script>
+  <script src="js/components/dealerPortal.js"></script>
+  <script src="js/components/officerDashboard.js"></script>
+  <script src="js/components/staffConsole.js"></script>
+  <script src="js/components/priceDiscovery.js"></script>
+  <script src="js/components/qualityModal.js"></script>
+  <script src="js/components/telephonySim.js"></script>
+
+  <!-- Main Orchestrator -->
+  <script src="js/app.js"></script>
+</body>
+</html>
+
